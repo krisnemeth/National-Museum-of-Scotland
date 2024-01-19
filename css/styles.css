@@ -1,0 +1,150 @@
+/* color variables */
+:root {
+  --light-grey: #EFECEC;
+  --medium-grey: #707070;
+  --black: #000000;
+}
+
+body {
+  font-family: 'Articulat CF', sans-serif;
+}
+
+/* general styles */
+
+.bg-grey {
+  background-color: var(--light-grey);
+}
+
+.bg-black {
+  background-color: var(--black);
+}
+
+
+
+/* header section styles */
+
+header {
+  position: relative;
+  background-color: black;
+  height: 50vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 40%, rgba(255,255,255,0.8169642857142857) 55%, rgba(255,255,255,0.49763655462184875) 70%, rgba(255,255,255,0) 100%);
+  opacity: 1;
+  z-index: 1;
+}
+
+/* CTA section styles */
+
+#CTA {
+  height: 50vh;
+}
+
+.cta-container {
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid var(--medium-grey);
+}
+
+/* events section styles */
+
+#events {
+  height: 100vh;
+}
+
+/* visit section styles */
+
+#visit {
+  height: 70vh;
+}
+
+/* visit section styles */
+
+#donations {
+  height: 90vh;
+}
+
+
+/* Media queries */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 390px) {
+  #CTA {
+    height: 60vh;
+  }
+  #events {
+    height: 250vh;
+  }
+
+  #visit {
+    height: 70vh;
+  }
+
+  #donations {
+    height: 150vh;
+  }
+
+  .footer {
+    height: 10vh;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 1180px) {
+  #CTA {
+    height: 50vh;
+  }
+  #events {
+    height: 110vh;
+  }
+
+  #visit {
+    height: 70vh;
+  }
+
+  #donations {
+    height: 90vh;
+  }
+
+  .footer {
+    height: 10vh;
+  }
+}
+
+

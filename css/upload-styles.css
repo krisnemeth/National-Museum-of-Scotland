@@ -1,0 +1,40 @@
+/* color variables */
+:root {
+  --light-grey: #EFECEC;
+  --medium-grey: #707070;
+  --black: #000000;
+}
+
+body {
+  font-family: 'Articulat CF', sans-serif;
+}
+
+
+
+/* general styles */
+
+.bg-grey {
+  background-color: var(--light-grey);
+}
+
+.bg-black {
+  background-color: var(--black);
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid var(--medium-grey);
+}
+
+.line-1 {
+  height: 2px;
+  background: var(--medium-grey);
+}
+
+
+/* .col {
+  border: 3px solid red;
+} */
