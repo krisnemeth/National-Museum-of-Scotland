@@ -155,24 +155,7 @@ if (isset($user)) {
         </div>
 
         <!-- Here maps JS -->
-        <script>
-        // Initialize the platform object
-        var platform = new H.service.Platform({
-            'apikey': 'FhpJVMyCR7fDtIX7dKkmrJdGNBJ2HoIzrjU3ZB8Rq-8'
-        });
-
-        // Obtain the default map types from the platform object
-        var maptypes = platform.createDefaultLayers();
-
-        // Instantiate (and display) the map
-        var map = new H.Map(
-            document.getElementById('mapContainer'),
-            maptypes.vector.normal.map,
-            {
-                zoom: 16,
-                center: { lng: -3.190000, lat: 55.946945 }
-            });
-        </script>
+        <!-- Removed the code for the map cause it contained the API key for it's connection -->
     </body>
     </section>
 
